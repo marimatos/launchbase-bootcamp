@@ -2,9 +2,9 @@
 
 Criar a página da empresa RocketSeat conforme indicado nos links abaixo:
 
-<a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-1-primeiro-html.md">Primeiro HTML</a>
-<a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-2-pagina-descricao.md">Página de descrição</a>
-<a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-3-pagina-cursos-e-iframe.md">Página de cursos e iframe</a>
+- <a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-1-primeiro-html.md">Primeiro HTML</a>
+- <a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-2-pagina-descricao.md">Página de descrição</a>
+- <a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-3-pagina-cursos-e-iframe.md">Página de cursos e iframe</a>
 
 ### Tecnologias utilizadas
 - HTML
