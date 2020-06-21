@@ -1,0 +1,50 @@
+{% extends "layout.njk" %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css" type="text/css">
+  {% block head %}
+  <title>RocketSeat</title>
+  {% endblock %}
+</head>
+<body>
+  <header>
+    <div class="links">
+      <a href="/">Sobre</a>
+      <a href="/courses">Conteúdos</a>
+      <a href="https://discordapp.com/invite/gCRAFhc" target="_blank">Comunidade</a>
+      <a href="mailto:oi@rocketseat.com.br">Email</a>
+      <a href="tel:+5547992078767">Telefone</a>
+    </div>    
+  </header>
+
+  {% block content %}
+  <div id="container">
+    <img src="/logo-rocketseat.svg" alt="RocketSeat"/>
+      
+    <h1>RocketSeat</h1>
+    <p>Transforme sua carreira e seja um programador desejado no mercado, dominando as ferramentas mais modernas de desenvolvimento web e mobile.</p>
+    <ul>      
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>React Native</li>
+      <li>NodeJS</li>
+    </ul>
+
+    <div class="links social-media">
+      <a href="https://github.com/Rocketseat/" target="_blank">Github</a>
+      <a href="https://www.instagram.com/rocketseat_oficial/" target="_blank">Instagram</a>
+      <a href="https://www.facebook.com/rocketseat">Facebook</a>
+    </div>
+  </div>  
+  {% endblock %}
+
+</body>
+</html>
