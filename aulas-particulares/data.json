@@ -1,0 +1,13 @@
+{
+  "teachers": [
+    {
+      "avatar_url": "http://google.com",
+      "name": "Marina Matos",
+      "birth": 1592784000000,
+      "degree": "master",
+      "class": "D",
+      "services": "portugues",
+      "created_at": 1593216828766
+    }
+  ]
+}
