@@ -175,6 +175,7 @@ input::placeholder {
   color: rgba(40, 72, 114, 0.432);
 }
 
+.button,
 button[type="submit"] {
   padding: 15px 32px;
   background-color: var(--constrast-color);
@@ -186,4 +187,22 @@ button[type="submit"] {
   text-transform: uppercase;
   font-weight: 700;
   cursor: pointer;
+  
+}
+
+.button {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+}
+
+#btn-delete {
+  background-color: lightcoral;
 }

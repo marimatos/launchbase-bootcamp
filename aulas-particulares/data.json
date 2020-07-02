@@ -1,24 +1,6 @@
 {
   "teachers": [
     {
-      "id": 1,
-      "name": "jiajdosjdo",
-      "avatar_url": "http://sdhsidj.com",
-      "birth": "2020-06-16",
-      "degree": "bachelor",
-      "classType": "P",
-      "services": "dsfsdf, dsfdsf"
-    },
-    {
-      "id": 2,
-      "name": "ajska",
-      "avatar_url": "http://ndskjadma.com",
-      "birth": "2020-06-12",
-      "degree": "doctorate",
-      "classType": "D",
-      "services": "fsdf, dggfg, sfdsf"
-    },
-    {
       "id": 3,
       "name": "joao",
       "avatar_url": "http://sdhsidj.com",
@@ -37,6 +19,11 @@
       "degree": "bachelor",
       "classType": "P",
       "services": "dsfsdf, dsfdsf"
+    },
+    {
+      "id": 5,
+      "birth": null,
+      "created_at": 1593644015516
     }
   ]
 }
