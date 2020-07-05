@@ -127,15 +127,15 @@ exports.put = function(req, res) {
 exports.delete = function(req, res) {
   const { id } = req.body;
 
-  const filteredStudents = data.Students.filter(function(Student) {
-    return Student.id != id;
+  const filteredStudents = data.students.filter(function(student) {
+    return student.id != id;
   })
 
-  data.Students = filteredStudents
+  data.students = filteredStudents
 
   fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {
     if (err) return res.send("Write file error")
 
-    return res.redirect('/Students');
+    return res.redirect('/students');
   })
 }
