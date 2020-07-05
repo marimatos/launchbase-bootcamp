@@ -1,45 +1,27 @@
 {% extends "layout.njk" %}
 
 {% block content %}
-<div class="card">
-  <section class="avatar" style="background: url(https://source.unsplash.com/collection/10553730/300) no-repeat center center / cover">
-
-  </section>
-  <section class="details">
-    <h3>Detalhes</h3>
-    <div class="item">
-      <div>Nome completo</div>
-      <div>Marina Matos</div>
-    </div>
-
-    <div class="item">
-      <div>Idade</div>
-      <div>30 anos</div>
-    </div>
-
-    <div class="item">
-      <div>Grau de escolaridade</div>
-      <div>Doutorado</div>
-    </div>
-
-    <div class="item">
-      <div>Tipo de aula</div>
-      <div>Presencial</div>
-    </div>
-
-    <div class="item">
-      <div>Acompanhamento</div>
-      <div>
-        <span>Português</span>
-        <span>Matemática</span>
-      </div>
-    </div>
-
-    <div class="item">
-      <div>Desde</div>
-      <div>01/01/2019</div>
-    </div>
-
-  </section>
+<div class="card table-container">
+  <a href="/teachers/create">Novo</a>
+  <table width="100%">
+    <thead>
+      <tr>
+        <th>Pro</th>
+        <th>Atendimento</th>
+        <th>Ação</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for teacher in teachers %}
+      <tr>
+        <td>
+          <span style="background-image: url({{teacher.avatar_url}})"></span>
+          {{teacher.name}}</td>
+        <td>{{teacher.services}}</td>
+        <td><a href="/teachers/{{teacher.id}}">Ver</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
 </div>
 {% endblock content %}
