@@ -126,6 +126,7 @@ header {
   font-weight: 700;
 }
 
+#services,
 .details .item span {
   padding: 8px 16px;
   background-color: var(--secundary-color);
@@ -206,7 +207,6 @@ button[type="submit"] {
 #btn-delete {
   background-color: lightcoral;
 }
-
 /* index  */
 
 .table-container {
@@ -243,6 +243,7 @@ tbody tr td:first-child {
   grid-template-columns: 64px 1fr;
   align-items: center;
 }
+
 
 tbody tr td:first-child span {
   width: 48px;

@@ -6,9 +6,9 @@
   <table width="100%">
     <thead>
       <tr>
-        <th>Pro</th>
-        <th>Atendimento</th>
-        <th>Ação</th>
+        <th>Alunos</th>
+        <th>Email</th>
+        <th>Ano escolar</th>
       </tr>
     </thead>
     <tbody>
@@ -17,7 +17,8 @@
         <td>
           <span style="background-image: url({{student.avatar_url}})"></span>
           {{student.name}}</td>
-        <td>{{student.services}}</td>
+        <td>{{student.email}}</td>
+        <td>{{student.grade}}</td>
         <td><a href="/students/{{student.id}}">Ver</td>
       </tr>
       {% endfor %}
