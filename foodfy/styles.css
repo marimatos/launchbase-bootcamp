@@ -72,7 +72,6 @@ header a:hover {
 
 .recipes {
   margin: 20px auto;
-  align-items: center;
   max-width: 940px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -168,45 +167,32 @@ main p {
   
 }
 
-/* Receitas */
+/* Modal - active */
 
-.recipe-info {
-  width: 940px;
-  margin: 50px auto;
-  font-size: 18px;
-  line-height: 20px;
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
 }
 
-#img p, #img h3 {
+.modal-info {
   text-align: center;
 }
 
-.subtitle h1 {
+.modal-info #title-modal {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.modal-info #chef-modal {
   font-size: 18px;
+  line-height: 21px;
+  color: #777777;
+  margin-bottom: 60px;
 }
 
-#ingredientes ul {
-  margin-left: 40px;
-}
-
-.recipe-info .subtitle {
-  margin-top: 20px;
-}
-
-.recipe-info p {
-  font-size: 18px;
-  margin-top: 10px;
-}
-
-.hide {
-  display: none;
-}
-
-.span {
-  cursor: pointer;
-  font-size: 14px;
-  margin-left: 10px;
-  font-weight: normal;
-  background-color: rgba(211, 211, 211, 0.199);
-  padding: 2px;
+.modal-info .close-modal {
+  font-size: 16px;
+  color: #777777;
 }
