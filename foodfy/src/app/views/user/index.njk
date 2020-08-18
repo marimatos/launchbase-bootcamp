@@ -1,0 +1,37 @@
+{% extends "layout.njk" %}
+
+{% block search %}
+  <form action="/recipes/?" method="get">
+    <input type="text" name="filter" placeholder="Buscar uma receita" value="{{filter}}">
+    <button>Buscar</button>
+  </form>
+{% endblock search %}
+
+{% block content %}
+  <main>
+    <section class="presentation">
+      <div class="presentation__texts">
+        <h1>As melhores receitas</h1>
+        <p>
+          Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.
+        </p>
+      </div>
+      <img src="/assets/chef.png" alt="Chef Foodfy"/>
+    </section>
+
+    <h2>Mais acessadas</h2>
+
+    <section class="recipes">
+      {% for recipe in recipes %}
+        <div class="recipe" name="id" value="{{recipe.id}}">
+          <div class="recipe-image">
+            <img src="{{recipe.image}}" alt="Imagem de {{recipe.title}}"/>
+          </div>
+          <h3>{{recipe.title}}</h3>
+          <p>{{recipe.chef_name}}</p>
+        </div>
+      {% endfor %}
+    </section>
+
+  </main>
+{% endblock content %}

@@ -1,0 +1,69 @@
+{% extends "adminLayout.njk" %}
+
+{% block content %}
+  <main>
+    <section class="detail">
+      <div class="detail__header">
+        <h3>Receita: {{recipe.title}}</h3>
+        <div class="header__form">
+          <form method="POST" action="/admin/recipes?_method=DELETE">
+            <input type="hidden" name="id" value="{{recipe.id}}">
+            <button type="submit" class="form__delete">Deletar</button>
+          </form>
+          <a href="/admin/recipes/{{recipe.id}}/edit" class="detail__edit">Editar Receita</a>
+        </div>
+      </div>
+
+      <div class="recipe-img">
+        <img src="{{recipe.image}}" alt="Imagem de {{recipe.title}}">
+      </div>
+
+      <div class="recipe-info-detail">    
+          <h2>{{recipe.title}}</h2>
+          <p>{{recipe.chef_name}}<p>      
+      </div>
+
+      <div class="recipe-description">
+        <div class="hide-button">
+          <div>
+            <h3>Ingredientes</h3>
+          </div>          
+        </div>
+        <div class="content">
+          <ul>
+            {% for ingredient in recipe.ingredients %}
+              <li>{{ingredient}}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+
+      <div class="recipe-description">
+        <div class="hide-button">
+          <div>
+            <h3>Modo de preparo</h3>
+          </div>         
+        </div>
+        <div class="content">
+          <ul>
+            {% for item in recipe.preparation %}
+              <li>{{item}}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+
+      <div class="recipe-description">
+        <div class="hide-button">
+          <div>
+            <h3>Informações extras</h3>
+          </div>
+        </div>
+        <div class="content">
+          <p>{{recipe.information}}</p>
+        </div>
+      </div>
+
+    </section>
+  </main>
+{% endblock content %}

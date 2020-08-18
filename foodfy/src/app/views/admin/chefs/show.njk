@@ -1,0 +1,31 @@
+{% extends "adminLayout.njk" %}
+
+{% block head %}
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+{% endblock head %}
+
+{% block content %}
+  <main>
+    <section class="detail">
+      <div class="detail__header">
+        <h3>Chef:
+          {{chef.title}}</h3>
+        <div class="header__form">
+          <form method="POST" action="/admin/recipes?_method=DELETE">
+            <input type="hidden" name="id" value="{{recipe.id}}">
+            <button type="submit" class="form__delete">Deletar</button>
+          </form>
+          <a href="/admin/recipes/{{recipe.id}}/edit" class="detail__edit">Editar chef</a>
+        </div>
+      </div>
+
+      <div class="detail__image">
+        <img src="{{chef.image}}" alt="Imagem de {{chef.title}}"/>
+      </div>
+
+      <h2>{{chef.name}}</h2>
+      <p>{{chef.recipes}}</p>
+
+    </section>
+  </main>
+{% endblock content %}
